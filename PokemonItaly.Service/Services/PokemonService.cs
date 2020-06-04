@@ -41,10 +41,13 @@ namespace PokemonItaly.Service.Services
 
             var pokemonDescription = await ReadPokemonDescription(pokemonDetails);
 
-            var translatedDescription = await _translatorRepository.ConvertToShakespear(pokemonDescription);
+            if (string.IsNullOrEmpty(pokemonDescription))
+            {
+                var translatedDescription = await _translatorRepository.ConvertToShakespear(pokemonDescription);
 
-            return ReadTranslatorText(translatedDescription);
-
+                return ReadTranslatorText(translatedDescription);
+            }
+            return string.Empty;
         }
 
         /// <summary>

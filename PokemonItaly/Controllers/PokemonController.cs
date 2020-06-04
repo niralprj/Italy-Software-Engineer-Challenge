@@ -10,7 +10,7 @@ using PokemonItaly.Interface.Interfaces;
 
 namespace PokemonItaly.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class PokemonController : ControllerBase
     {
