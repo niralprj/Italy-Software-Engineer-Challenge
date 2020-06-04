@@ -1,11 +1,14 @@
 ﻿using PokemonItaly.Data.Constants;
 using PokemonItaly.Data.Interfaces;
-using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace PokemonItaly.Data.Repository
 {
+    /// <summary>
+    /// Repository layer to translate Language to shakesperean style
+    /// Later on can improved to read another language
+    /// </summary>
     public class TranslatorRepository : ITranslatorRepository
     {
 

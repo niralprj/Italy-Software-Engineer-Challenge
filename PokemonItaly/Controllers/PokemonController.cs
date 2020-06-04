@@ -35,21 +35,12 @@ namespace PokemonItaly.Controllers
         [HttpGet("{pokemonName}")]
         public async Task<JsonResult> GetPokemonDescription(string pokemonName)
         {
-            var description = await _pokemonService.GetPokemonDescription(pokemonName.ToLower());
+            var description = await _pokemonService.GetPokemonDescription(pokemonName);
 
             return new JsonResult(new PokemonDetails() { Description = description, Name = pokemonName });
         }
 
         #endregion
-        //public static bool VerifyControllerActionAttribute(Controller controller, Func<ActionResult> action, Type attributeType)
-        //{
-        //    MethodInfo methodInfo = action.Method;
-        //    object[] attributes = methodInfo.GetCustomAttributes(attributeType, true);
-
-        //    return attributes.Any(a => a.GetType() == attributeType);
-        //}
-
-
     }
 
 }

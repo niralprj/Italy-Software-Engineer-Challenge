@@ -8,7 +8,6 @@ using Swashbuckle.AspNetCore.Swagger;
 using PokemonItaly.Service.Services;
 using PokemonItaly.Data.Interfaces;
 using PokemonItaly.Data.Repository;
-using Microsoft.AspNetCore.Mvc.Filters;
 using PokemonItaly.API.Extensions;
 using PokemonItaly.API.Filters;
 

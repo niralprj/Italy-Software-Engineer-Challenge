@@ -5,11 +5,14 @@ using System.Threading.Tasks;
 
 namespace PokemonItaly.Data.Repository
 {
+    /// <summary>
+    /// Repository layer to perform external API operations to read Pokemon information
+    /// </summary>
     public class PokemonRepository : IPokemonRepository
     {
 
         #region Declaration
-        public HttpClient _client;
+        public HttpClient _client = new HttpClient();
         #endregion
 
         #region Constructor
@@ -29,7 +32,7 @@ namespace PokemonItaly.Data.Repository
         {
             try
             {
-                HttpResponseMessage response = await _client.GetAsync(ExternalAPIConstants.Pokemon_GetPokemon_API_URL + pokemonName);
+                HttpResponseMessage response = await _client.GetAsync(ExternalAPIConstants.Pokemon_GetPokemon_API_URL + pokemonName.ToLower());
                 var data = await response.Content.ReadAsStringAsync();
                 return data;
             }

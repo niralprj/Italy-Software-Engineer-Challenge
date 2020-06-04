@@ -52,7 +52,7 @@ namespace PokemonItaly.Service.Services
         /// </summary>
         /// <param name="translator">Shakespeares translated text</param>
         /// <returns></returns>
-        private string ReadTranslatorText(string translator, string languageToConvert = "shakespeare")
+        public string ReadTranslatorText(string translator, string languageToConvert = "shakespeare")
         {
             if (string.IsNullOrEmpty(translator))
             {
@@ -77,7 +77,7 @@ namespace PokemonItaly.Service.Services
         /// </summary>
         /// <param name="pokemonData">pokemon details</param>
         /// <returns></returns>
-        private async Task<string> ReadPokemonDescription(string pokemonData ,string readInLanguage = "en")
+        public async Task<string> ReadPokemonDescription(string pokemonData ,string readInLanguage = "en")
         {
             string description = string.Empty;
 

@@ -1,5 +1,4 @@
-﻿
-namespace PokemonItaly.Data.Constants
+﻿namespace PokemonItaly.Data.Constants
 {
     public static class ExceptionConstants
     {
