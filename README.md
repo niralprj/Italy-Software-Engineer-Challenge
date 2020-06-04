@@ -25,7 +25,7 @@ Italy Software Engineer Challenge is an REST API build with .net core 3.1 framew
     
     URL : http://localhost:52282/api/pokemon/Charizard 
     
-## Source Code Usage
+## How to Run
 
   Easiest Way: 
   
@@ -35,6 +35,8 @@ Italy Software Engineer Challenge is an REST API build with .net core 3.1 framew
   4. Run the project
   
   With Docker:
+  
+  0. Download the source code
   
   1. Download .net core 3.1 Run time,SDK for relevent OS (Microsoft, Linux, Mac, Docker)
   
@@ -71,3 +73,8 @@ Italy Software Engineer Challenge is an REST API build with .net core 3.1 framew
   7. To Stop Container : 
   
     Command to Run : docker stop core-PokemonItaly.API
+    
+    
+## Useful link to Run
+
+    https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows
