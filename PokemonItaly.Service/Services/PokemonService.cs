@@ -41,7 +41,7 @@ namespace PokemonItaly.Service.Services
 
             var pokemonDescription = await ReadPokemonDescription(pokemonDetails);
 
-            if (string.IsNullOrEmpty(pokemonDescription))
+            if (!string.IsNullOrEmpty(pokemonDescription))
             {
                 var translatedDescription = await _translatorRepository.ConvertToShakespear(pokemonDescription);
 

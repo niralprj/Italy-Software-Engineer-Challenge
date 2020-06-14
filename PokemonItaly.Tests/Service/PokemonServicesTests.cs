@@ -1,12 +1,7 @@
-﻿using Moq;
-using PokemonItaly.Data.Interfaces;
-using PokemonItaly.Data.Repository;
-using PokemonItaly.Interface.Interfaces;
+﻿using PokemonItaly.Data.Repository;
 using PokemonItaly.Service.Services;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
