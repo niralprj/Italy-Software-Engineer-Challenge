@@ -37,7 +37,7 @@ namespace PokemonItaly.Controllers
         {
             var description = await _pokemonService.GetPokemonDescription(pokemonName);
 
-            return new JsonResult(new PokemonDetails() { Description = description, Name = pokemonName });
+            return new JsonResult(new PokemonDetails() { Name = pokemonName ,Description = description});
         }
 
         #endregion
